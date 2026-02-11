@@ -42,7 +42,6 @@ print_default "Updating packages (this may take a while)..."
 apt update 1>/dev/null
 DEBIAN_FRONTEND=noninteractive apt upgrade -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" 1>/dev/null
 
-
 print_success "Packages sucessfully updated"
 
 # Install docker
